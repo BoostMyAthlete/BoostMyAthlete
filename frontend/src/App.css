@@ -49,3 +49,21 @@ code {
 li{
   text-decoration: none;
 }
+
+.footer {
+  height: 391px;
+  width: 375px;
+  position: absolute;
+  left: 0;
+  top: 1298px;
+  border-radius: 0;
+  background: #1A202C;
+}
+
+.footer p {
+  color: #FFF;
+}
+
+.footer ul li a {
+  color: #4b72bc;
+}

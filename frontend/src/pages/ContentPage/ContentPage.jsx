@@ -6,6 +6,7 @@ import HomePage from "@pages/HomePage/HomePage";
 import SignIn from "@pages/SignIn/SignIn";
 import SearchPage from "@pages/SearchPage/SearchPage";
 import ProfilePage from "@pages/ProfilePage/ProfilePage";
+import Footer from "@components/footer";
 import {Routes, Route} from "react-router-dom"
 
 function ContentPage() {
@@ -17,6 +18,7 @@ function ContentPage() {
       <Route path="/profile" element={<ProfilePage />}/>
       <Route path="/signin" element={<SignIn />}/>
       <Route path="/search" element={<SearchPage />} />
+      <Footer />
     </Routes>
   );
 }

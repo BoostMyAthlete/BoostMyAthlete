@@ -6,6 +6,7 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
+    "plugin:import",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
@@ -32,11 +33,6 @@
       "error",
       {
         "assert": "either"
-      }
-    ],
-    "import/no-extraneous-dependencies": [
-      "error", {
-        "devDependencies": "true"
       }
     ]
   },

@@ -15,9 +15,9 @@ const AthleteList = () => {
     axios
       .request(options)
       .then((response) => {
-        const athletes = response.data.data;
-        const filteredAthletes = athletes.filter((athlete) => athlete.athlete_profile_image !== null);
-        setPersons(filteredAthletes);
+        const totalData = response.data.data;
+        const filterImg = totalData.filter((athlete) => athlete.athlete_profile_image !== null);
+        setPersons(filterImg);
       });
     };
     

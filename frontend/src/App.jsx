@@ -4,7 +4,7 @@ import ContentPage from "@pages/ContentPage/ContentPage";
 function App() {
   return (
     <div className="App">
-        <ContentPage />
+      <ContentPage />
     </div>
   );
 }

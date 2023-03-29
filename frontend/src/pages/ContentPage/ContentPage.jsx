@@ -6,7 +6,7 @@ import HomePage from "@pages/HomePage/HomePage";
 import SignIn from "@pages/SignIn/SignIn";
 import SearchPage from "@pages/SearchPage/SearchPage";
 import ProfilePage from "@pages/ProfilePage/ProfilePage";
-import Footer from "@components/footer";
+import Footer from "@components/Footer/footer";
 import {Routes, Route} from "react-router-dom"
 
 function ContentPage() {

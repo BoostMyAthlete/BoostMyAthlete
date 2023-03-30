@@ -1,4 +1,10 @@
+.row{
+  width: 100%;
+  margin:0;
+}
+
 body {
+  overflow-x: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -48,4 +54,10 @@ code {
 
 li{
   text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .me-auto {
+    justify-content: flex-end;
+  }
 }

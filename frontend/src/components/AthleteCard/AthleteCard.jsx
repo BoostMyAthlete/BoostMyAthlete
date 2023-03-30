@@ -9,11 +9,10 @@ const AthleteCard = ({ athlete }) => {
         athlete ? (
             <div>
               <img src={athlete_profile_image} alt={athlete_last} className="img-thumbnail" style={{ maxWidth: "200px", maxHeight: "200px" }} />
-
               <div>
-                <h5>First Name: {athlete_first}</h5>
-                <h5>Last Name: {athlete_last}</h5>
-                <p>Country: {athlete_country_name}<img src={athlete_flag} alt={athlete_noc} /></p>
+                <h5>{athlete_first}</h5>
+                <h5>{athlete_last}</h5>
+                <p>Country: {athlete_country_name} <img src={athlete_flag} alt={athlete_noc} /></p>
                 <p>Gender: {athlete_gender}</p>
                 <p>Age: {athlete_age}</p>              
               </div>

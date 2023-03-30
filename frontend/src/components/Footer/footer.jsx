@@ -1,52 +1,63 @@
 import React from "react";
 import "../../App.css";
-import logo from "@assets/logoBlack.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import bmaWhite from "../../assets/BMA White.png";
+import { Instagram, Facebook, Twitter } from "react-bootstrap-icons";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        <img style={{ width: 50, height: 50 }} src={logo} alt="Logo" />
-      </div>
-      <div className="footer-copyright">
+        <img style={{ width: 50, height: 50 }} src={bmaWhite} alt="Logo" />
+        <div className="footer-copyright">
         <p>&copy; 2023 BoostMyAthlete</p>
+      </div>
       </div>
       <div className="footer-links">
         <ul>
           <li>
-            <a href="#">Privacy Policy</a>
-            <span className="twitter-link">
-              <a href="#">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </span>
-            <span className="facebook-link">
-              <a href="#">
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-            </span>
+            <a href="#" style={{ color: "#A0ABC0" }}>
+              Privacy Policy
+            </a>
           </li>
-          <li><a href="#">Terms &amp; Conditions</a>
-            <span className="facebook-link">
-              <a href="#">
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-            </span>
+          <li>
+            <a href="#" style={{ color: "#A0ABC0" }}>
+              Terms &amp; Conditions
+            </a>
           </li>
-          <li><a href="#">Cookie Policy</a>
-            <span className="twitter-link">
-              <a href="#">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </span>
+          <li>
+            <a href="#" style={{ color: "#A0ABC0" }}>
+              Cookie Policy
+            </a>
           </li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#" style={{ color: "#A0ABC0" }}>
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
+      <div className="footer-social">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/">
+              <Instagram color="#E1306C" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/">
+              <Facebook color="#3B5998" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/">
+              <Twitter color="#1DA1F2" />
+            </a>
+          </li>
+        </ul>
+        </div>
     </footer>
   );
 }
 
 export default Footer;
+

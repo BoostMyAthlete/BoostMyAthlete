@@ -1,6 +1,8 @@
 import React from "react";
 import "../../App.css";
 import logo from "@assets/logoBlack.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -15,16 +17,32 @@ function Footer() {
         <ul>
           <li>
             <a href="#">Privacy Policy</a>
+            <span className="twitter-link">
+              <a href="#">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+            </span>
+            <span className="facebook-link">
+              <a href="#">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+            </span>
           </li>
-          <li>
-            <a href="#">Terms &amp; Conditions</a>
+          <li><a href="#">Terms &amp; Conditions</a>
+            <span className="facebook-link">
+              <a href="#">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+            </span>
           </li>
-          <li>
-            <a href="#">Cookie Policy</a>
+          <li><a href="#">Cookie Policy</a>
+            <span className="twitter-link">
+              <a href="#">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+            </span>
           </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </footer>

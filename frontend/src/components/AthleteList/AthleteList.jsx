@@ -8,7 +8,7 @@ const AthleteList = () => {
     const options = {
       method: 'GET',
       url: 'https://api.triathlon.org/v1/athletes',
-      params: {per_page: '150', validated: 'true'},
+      params: {per_page: '1000', validated: 'true'},
       headers: {accept: 'application/json', apikey: '2649776ef9ece4c391003b521cbfce7a'}
     };
     const getPersons = () => {

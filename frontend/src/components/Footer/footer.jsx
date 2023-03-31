@@ -15,27 +15,27 @@ function Footer() {
       <div className="footer-links">
         <ul>
           <li>
-            {/* <a href="#" style={{ color: "#A0ABC0" }}>
+            {<a href="#" style={{ color: "#A0ABC0" }}>
               Privacy Policy
-                </a> */}
+                </a>}
           </li>
           <li>
-            {/* <a href="#" style={{ color: "#A0ABC0" }}>
+            {<a href="#" style={{ color: "#A0ABC0" }}>
               Terms &amp; Conditions
             </a>
-              */}
+              /}
           </li>
           <li>
-            {/* <a href="#" style={{ color: "#A0ABC0" }}>
+            { <a href="#" style={{ color: "#A0ABC0" }}>
               Cookie Policy
             </a>
-            */}
+            /}
           </li>
           <li>
-            {/* <a href="#" style={{ color: "#A0ABC0" }}>
+            {<a href="#" style={{ color: "#A0ABC0" }}>
               Contact
             </a>
-          */}
+          /}
           </li>
         </ul>
       </div>

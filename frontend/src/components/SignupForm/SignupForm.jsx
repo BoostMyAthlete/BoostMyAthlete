@@ -2,6 +2,9 @@ import React from "react";
 
 
 function SignupForm() {
+
+const { register, handleSubmit } = useForm();
+const [data, setData] = useState("");
   return (
     <form>
 
@@ -35,5 +38,3 @@ function SignupForm() {
 }
 
 export default SignupForm;
-
-

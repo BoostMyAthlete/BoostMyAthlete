@@ -3,7 +3,7 @@ import StepByStepCards from "@components/Timeline/Timeline";
 
 function HomePage() {
   return (
-    <div>
+    <div style={{ paddingBottom: "100px" }}>
       <StepByStepCards />
     </div>
   );

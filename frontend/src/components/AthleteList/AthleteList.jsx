@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import AthleteCard from "../AthleteCard/AthleteCard";
+import {Link} from "react-router-dom"
 
 function AthleteList() {
   const [persons, setPersons] = useState([]);
@@ -39,7 +40,9 @@ function AthleteList() {
                 key={athlete.athlete_id}
                 className="col-lg-3 col-md-6 col-sm-12"
               >
-                <AthleteCard athlete={athlete} />
+                <Link to={`/profile/${athlete.athlete_id}`}>
+                  <AthleteCard athlete={athlete} />
+                </Link>
               </div>
             ))
           : null}

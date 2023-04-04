@@ -1,30 +1,41 @@
-import React from 'react'
+import React, {useState} from "react";
+import {useForm } from 'react-hook-form';
 
-const ContactForm = () => {
+
+function ContactForm() {
+
+const { register, handleSubmit } = useForm();
+const [data, setData] = useState("");
   return (
-    <div>
-        <h1>Support Growth with BoostMyAthlete</h1>
-        <form>
-        <label htmlFor="name">Name:</label> <br />
-        <input placeholder="Name" type="text" id="name" /> <br />
+    <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
 
-        <label htmlFor="email">E-mail:</label> <br />
-        <input placeholder="Insert email: example@example.com" type="email" id="email" /> <br />
 
-        <label htmlFor="phone">Phone:</label> <br />
-        <input placeholder="Insert phone: (xxx-xxxxxxxxx" type="tel" id="phone" /> <br />
+      <label htmlFor="name">Username</label> <br />
+      <input {...register("name")} placeholder="Name" />
+      <br />
 
-        <label htmlFor="budget">Budget:</label> <br />
-        <input placeholder="Insert budget" type="number" id="phone" /> <br />
+      <label htmlFor="email">E-mail</label> <br />
+      <input {...register("email")} placeholder="E-mail" /> <br />
 
-        <label htmlFor="goals">Goals:</label> <br />
-        <input placeholder="Goals" type="text" id="goals" /> <br />
 
-        <button type="submit">Send Enquiry</button>
+      <label htmlFor="phone">Phone</label> <br />
+      <input {...register("phone")}  type="phone"placeholder="Phone" />
+      <br />
 
-        </form>
-    </div>
-  )
+      <label htmlFor="budget">Budget</label> <br />
+      <input {...register("password")}  type="number"placeholder="Budget" />
+      <br />
+      
+      <label htmlFor="goals">Goals</label> <br />
+      <textarea {...register("Goals")} placeholder="Goals" />
+      
+      <p>{data}</p>
+      <button type="submit">Send Enquiry</button>
+
+     
+    </form>
+  );
+ 
 }
 
-export default ContactForm
+export default ContactForm;

@@ -23,11 +23,14 @@ const [data, setData] = useState("");
       <br />
 
       <label htmlFor="budget">Budget</label> <br />
-      <input {...register("password")}  type="number"placeholder="Budget" />
+      <input {...register("budget")}  type="number" step="0.01" placeholder="0.00€" />
       <br />
       
       <label htmlFor="goals">Goals</label> <br />
-      <textarea {...register("Goals")} placeholder="Goals" />
+      <textarea rows="5" cols="30" {...register("Goals")} placeholder="Goals" />
+
+    
+     
       
       <p>{data}</p>
       <button type="submit">Send Enquiry</button>

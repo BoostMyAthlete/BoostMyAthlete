@@ -4,7 +4,7 @@ import SearchAthlete from "@components/SearchAthlete/SearchAthlete";
 
 function SearchPage() {
   return <div><h1>SearchPage</h1>
-  <SearchAthlete/>
+  
   <AthleteList/>
   </div>;
 }

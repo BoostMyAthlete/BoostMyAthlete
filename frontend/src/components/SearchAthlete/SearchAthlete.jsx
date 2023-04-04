@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const SearchAthlete = () => {
+const SearchAthlete = ({handleCountry, handleAge}) => {
   return (  <div>
              <h3>Sports</h3>   
             <select id="sports">
             <option value="triathlon">Triathlon</option>
             </select>
             <h3>Country</h3>
-            <select id="Country">
+            <select id="country" onChange={handleCountry}>
+            <option value="">-</option>
             <option value="Portugal">Portugal</option>
             <option value="Australia">Australia</option>
             <option value="Austria">Austria</option>
@@ -30,12 +31,13 @@ const SearchAthlete = () => {
             <option value="United States">United States</option>
         </select>
         <h3>Age</h3>
-        <select id="age">
-          <option value="<18"> &lt;18</option>
+        <select id="age" onChange={handleAge}>
+          <option value="0">-</option>
+          <option value="18"> &lt;18</option>
           <option value="18,22">18-22</option>
           <option value="23,27">23-27</option>
           <option value="28,32">28-32</option>
-          <option value=">32">&gt; 32</option>
+          <option value="32">&gt; 32</option>
         </select>
         <br />
         </div>

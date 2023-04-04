@@ -28,6 +28,9 @@ const [data, setData] = useState("");
       
       <label htmlFor="goals">Goals</label> <br />
       <textarea rows="5" cols="30" {...register("Goals")} placeholder="Goals" />
+
+    
+     
       
       <p>{data}</p>
       <button type="submit">Send Enquiry</button>

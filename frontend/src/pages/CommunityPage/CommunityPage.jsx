@@ -1,5 +1,6 @@
 import React from "react";
-import DiscussionBoard from "../../components/DiscussionBoard/DiscussionBoard";
+import DiscussionBoard from "@components/DiscussionBoard/DiscussionBoard";
+import MeetupEvents from "@components/MeetupEvents/MeetupEvents";
 
 
 
@@ -10,6 +11,7 @@ function CommunityPage() {
         “Sports and business may seem like different worlds, but both rely on community building to achieve success”
       </div>
       <DiscussionBoard />
+      <MeetupEvents />
     </div>
   );
 }

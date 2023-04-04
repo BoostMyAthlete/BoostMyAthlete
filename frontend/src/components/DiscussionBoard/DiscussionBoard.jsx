@@ -83,6 +83,7 @@ function DiscussionBoard() {
               marginLeft: "20px",
               marginRight: "20px",
               width: "300px",
+              color: "#ffffff",
               backgroundColor:"#262D34",
             }}
           />

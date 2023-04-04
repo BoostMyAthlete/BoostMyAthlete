@@ -32,7 +32,14 @@ const AthleteDetails = () => {
     <div>
       {athlete ? (
         <div>
-          <h1>{athlete.athlete_first}</h1>
+          <div>
+          <img src={athlete.athlete_profile_image} alt={athlete.athlete_last} className="img-thumbnail" style={{ maxWidth: "200px", maxHeight: "200px" }}/>
+          </div>
+          <h4>{athlete.athlete_first}</h4>
+          <h4>{athlete.athlete_last}</h4>
+          <p>Country: {athlete.athlete_country_name} <img src={athlete.athlete_flag} alt={athlete.athlete_noc} /> </p>
+          <p>Gender: {athlete.athlete_gender}</p>
+          <p>Age: {athlete.athlete_age}</p>
         </div>
       ) : null}
     </div>
@@ -40,3 +47,4 @@ const AthleteDetails = () => {
 };
 
 export default AthleteDetails;
+

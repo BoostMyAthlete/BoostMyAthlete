@@ -65,8 +65,3 @@ const AthleteList = () => {
 
    )};
    export default AthleteList
-
-   // if age.length === 1 && age === 18 return athlete.athlete_age < 18
-// else if age.length === 1 && age === 32 return athlete.athlete_age > 32
-// else return age[0] <= athlete.athlete_age <= age[1]
-// if age.length === 1 return age else return index[0] < age < index[1]

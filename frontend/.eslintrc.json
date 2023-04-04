@@ -4,9 +4,9 @@
     "es2021": true
   },
   "extends": [
+    "import",
     "plugin:react/recommended",
     "airbnb",
-    "plugin:import",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
@@ -16,7 +16,10 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "import"],
+  "plugins": [
+    "react",
+    "import"
+  ],
   "rules": {
     "no-console": "off",
     "no-restricted-syntax": [
@@ -40,12 +43,15 @@
     "import/resolver": {
       "eslint-import-resolver-custom-alias": {
         "alias": {
-          "@assets": "./src/assets",
-          "@components": "./src/components",
-          "@pages": "./src/pages",
-          "@services": "./src/services"
+          "@assets": "./frontend/src/assets",
+          "@components": "./frontend/src/components",
+          "@pages": "./frontend/src/pages",
+          "@services": "./frontend/src/services"
         },
-        "extensions": [".js", ".jsx"]
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
       }
     }
   }

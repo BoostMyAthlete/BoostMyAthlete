@@ -64,7 +64,6 @@ function NavMenu() {
                   alt="Logo"
                   className="img-fluid img-thumbnail"
                 />
-                Boost My Athlete
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>

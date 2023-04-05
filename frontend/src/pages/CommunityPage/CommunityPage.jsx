@@ -1,7 +1,8 @@
 import React from "react";
 
 function CommunityPage() {
-  return <div style={{ paddingBottom: "100px" }}>CommunityPage</div>;
+  return <div >
+  </div>;
 }
 
 export default CommunityPage;

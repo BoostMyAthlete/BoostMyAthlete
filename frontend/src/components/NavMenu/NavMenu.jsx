@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
 import bmaBlack from "../../assets/BMA Black.png";
+import "./navmenu.css";
 
 function NavMenu() {
   const [show, setShow] = useState(false);

@@ -12,16 +12,38 @@ const MeetupEvents = () => {
       <div className="meetups">
         <div className="meetup">
           <div className="meetup-date">
-            <div className="dayofmonth">
-              26
-            </div>
             <div className="month">
               APR
+            </div>
+            <div className="dayofmonth">
+              26
             </div>
           </div>
           <div className="meetup-info">
             <div className="meetup-title">
               Meetup #1
+            </div>
+            <div className="meetup-location">
+              Texas, USA
+            </div>
+            <div className="meetup-tags">
+              <div className="tag">Remote</div>
+              <div className="tag">Part-time</div>
+            </div>
+          </div>
+        </div>
+        <div className="meetup">
+          <div className="meetup-date">
+            <div className="month">
+              APR
+            </div>
+            <div className="dayofmonth">
+              30
+            </div>
+          </div>
+          <div className="meetup-info">
+            <div className="meetup-title">
+              Meetup #2
             </div>
             <div className="meetup-location">
               Lisbon, Portugal
@@ -35,24 +57,24 @@ const MeetupEvents = () => {
         </div>
         <div className="meetup">
           <div className="meetup-date">
-            <div className="dayofmonth">
-              27
-            </div>
             <div className="month">
-              APR
+              MAY
+            </div>
+            <div className="dayofmonth">
+              2
             </div>
           </div>
           <div className="meetup-info">
             <div className="meetup-title">
-              Meetup #2
+              Meetup #3
             </div>
             <div className="meetup-location">
-              Berlin, Germany
+              California, USA
             </div>
             <div className="meetup-tags">
-              <div className="tag">In-person</div>
               <div className="tag">Full-time</div>
-              <div className="tag">Local</div>
+              <div className="tag">Contract</div>
+              <div className="tag">Worldwide</div>
             </div>
           </div>
         </div>

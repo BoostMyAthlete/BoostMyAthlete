@@ -1,4 +1,8 @@
 import React from "react";
+import newest from "../../assets/newest.png"
+import following from "../../assets/following.png"
+import popular from "../../assets/popular.png"
+import perfil from "../../assets/perfil.png"
 
 function DiscussionBoard() {
   return (
@@ -21,7 +25,7 @@ function DiscussionBoard() {
             padding: "10px",
           }}
         >
-          <img src="/caminho/do/icone1.png" alt="icone1" />
+          <img src= {newest} alt="newest" width="30" />
           <span style={{ marginLeft: "10px" }}>Newest</span>
         </div>
         <div
@@ -32,7 +36,7 @@ function DiscussionBoard() {
             padding: "10px",
           }}
         >
-          <img src="/caminho/do/icone2.png" alt="icone2" />
+          <img src={popular} alt="popular" width="30" />
           <span style={{ marginLeft: "10px" }}>Popular</span>
         </div>
         <div
@@ -43,7 +47,7 @@ function DiscussionBoard() {
             padding: "10px",
           }}
         >
-          <img src="/caminho/do/icone3.png" alt="icone3" />
+          <img src={following} alt="following" width="30" />
           <span style={{ marginLeft: "10px" }}>Following</span>
         </div>
       </div>
@@ -62,13 +66,13 @@ function DiscussionBoard() {
             alignItems: "center",
             backgroundColor: "#262D34",
             borderRadius: "50%",
-            width: "40px",
-            height: "40px",
-            marginTop: "20px"
+            width: "60px",
+            height: "60px",
+            margin: "10px",
           }}
         >
           <img
-            src="/caminho/do/perfil.png"
+            src={perfil}
             alt="perfil"
             style={{ borderRadius: "50%", width: "100%", height: "100%" }}
           />

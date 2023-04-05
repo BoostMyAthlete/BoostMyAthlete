@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
-import bmaBlack from "../../assets/BMA Black.png";
+import bmaBlack from "../../assets/BMA SimplyLogo.png";
 import "./navmenu.css";
 
 function NavMenu() {
@@ -17,7 +17,7 @@ function NavMenu() {
 
   return (
     <>
-      <Navbar bg="light" expand="lg" className="mb-3 d-none d-lg-block">
+      <Navbar expand="lg" className="mb-3 d-none d-lg-block">
         <Container fluid>
           <Navbar.Brand>
             <img src={bmaBlack} alt="Logo" className="logo" />

@@ -47,8 +47,9 @@ const AthleteList = () => {
       return (
         <>
         <SearchAthlete handleCountry={handleCountry}  handleAge={handleAge} />
+        <br/>
             <div>
-                <button onClick={getPersons}>Get Athlete List</button>
+                <button class="btn-form" onClick={getPersons}>Get Athlete List</button>
                 <div className="row">          
       {
       persons

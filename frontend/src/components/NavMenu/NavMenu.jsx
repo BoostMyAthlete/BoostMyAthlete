@@ -19,7 +19,7 @@ function NavMenu() {
       <Navbar bg="light" expand="lg" className="mb-3 d-none d-lg-block">
         <Container fluid>
           <Navbar.Brand>
-            <img src={bmaBlack} alt="Logo" className="" />
+            <img src={bmaBlack} alt="Logo" className="logo" />
           </Navbar.Brand>
           <Navbar.Collapse id="navbar-nav" className="justify-content-end">
             <Nav className="ms-auto justify-content-end">
@@ -45,7 +45,7 @@ function NavMenu() {
       <Navbar bg="light" expand="lg" className="mb-3 d-lg-none">
         <Container fluid>
           <Navbar.Brand>
-            <img src={bmaBlack} alt="Logo" className="" />
+            <img src={bmaBlack} alt="Logo" className="logo" />
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="offcanvasNavbar"

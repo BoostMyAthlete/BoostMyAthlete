@@ -1,9 +1,12 @@
 import React from "react";
 import StepByStepCards from "@components/Timeline/Timeline";
+import CardList from "@components/LandingContent/LandingContent";
 
 function HomePage() {
   return (
-    <div style={{ paddingBottom: "100px" }}>
+
+    <div>
+      <CardList />
       <StepByStepCards />
     </div>
   );

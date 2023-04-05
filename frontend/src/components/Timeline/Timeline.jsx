@@ -15,15 +15,15 @@ function StepByStepCards() {
   return (
     <VerticalTimeline
       animate="true"
-      lineColor="linear-gradient(45deg, hsla(168, 85%, 52%, 0.5), hsla(263, 88%, 45%, 0.5) 100%)"
+      lineColor="linear-gradient(to bottom, #000000, #434343)"
     >
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="Step One"
         contentStyle={{
           background:
-            "linear-gradient(45deg, hsla(168, 85%, 52%, 0.5), hsla(263, 88%, 45%, 0.5) 100%)",
-          color: "black",
+            "linear-gradient(to right, #000000, #434343)",
+          color: "white",
           fontWeight: "700",
           fontFamily: "IBM Plex Mono, sans sherif",
           textAlign: "left",
@@ -31,7 +31,7 @@ function StepByStepCards() {
         contentArrowStyle={{ borderRight: "7px solid  rgb(0,0,0)" }}
         iconStyle={{
           background:
-            "linear-gradient(45deg, hsla(168, 85%, 52%, 1), hsla(263, 88%, 45%, 1) 100%)",
+            "white",
           boxShadow:
             "0 0 0 4px #8a2be2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05)",
           borderRadius: "80%",
@@ -54,8 +54,8 @@ function StepByStepCards() {
         date="Step Two"
         contentStyle={{
           background:
-            "linear-gradient(45deg, hsla(168, 85%, 52%, 0.5), hsla(263, 88%, 45%, 0.5) 100%)",
-          color: "black",
+            "linear-gradient(to right, #000000, #434343)",
+          color: "white",
           fontWeight: "700",
           fontFamily: "IBM Plex Mono, sans sherif",
           textAlign: "left",
@@ -63,7 +63,7 @@ function StepByStepCards() {
         contentArrowStyle={{ borderRight: "7px solid  rgb(0,0,0)" }}
         iconStyle={{
           background:
-            "linear-gradient(45deg, hsla(168, 85%, 52%, 1), hsla(263, 88%, 45%, 1) 100%)",
+            "white",
           boxShadow:
             "0 0 0 4px #8a2be2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05)",
           borderRadius: "80%",
@@ -88,8 +88,8 @@ function StepByStepCards() {
         date="Step Three"
         contentStyle={{
           background:
-            "linear-gradient(45deg, hsla(168, 85%, 52%, 0.5), hsla(263, 88%, 45%, 0.5) 100%)",
-          color: "black",
+            "linear-gradient(to right, #000000, #434343)",
+          color: "white",
           fontWeight: "700",
           fontFamily: "IBM Plex Mono, sans sherif",
           textAlign: "left",
@@ -97,7 +97,7 @@ function StepByStepCards() {
         contentArrowStyle={{ borderRight: "7px solid  rgb(0,0,0)" }}
         iconStyle={{
           background:
-            "linear-gradient(45deg, hsla(168, 85%, 52%, 1), hsla(263, 88%, 45%, 1) 100%)",
+            "white",
           boxShadow:
             "0 0 0 4px #8a2be2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05)",
           borderRadius: "80%",

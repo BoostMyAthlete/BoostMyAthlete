@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import "./homecarousel.css";
+
 
 const HomeCarousel = () => {
   const [persons, setPersons] = useState([]);
@@ -22,17 +24,24 @@ const HomeCarousel = () => {
   }, []);
 
   return (
-    <>
+   
+    
+    <div className="carousel-container">
+    <h1>Meet our new Athletes</h1>
+     
       {persons.length > 0 ? (
-        <Carousel fade>
+        <Carousel fade indicators={false}>
           {persons.map((athlete) => (
-            <Carousel.Item key={athlete.athlete_id} className='bg-black border-5'>
+            <Carousel.Item key={athlete.athlete_id} id="carousel">
               <Link to={`/profile/${athlete.athlete_id}`}>
+              <div className="carousel-item-container">
                 <img
                   src={athlete.athlete_profile_image}
                   alt={athlete.athlete_last}
-                  style={{ maxWidth: '256px', maxHeight: '320px' }}
+                  className="carousel-image"
                 />
+                <div className="carousel-item-caption">{athlete.athlete_first} {athlete.athlete_last}</div>
+              </div>
               </Link>
             </Carousel.Item>
           ))}
@@ -40,7 +49,8 @@ const HomeCarousel = () => {
       ) : (
         <p>Loading...</p>
       )}
-    </>
+    </div>
+
   );
 };
 

@@ -21,7 +21,7 @@ function DiscussionBoard() {
           style={{
             textAlign: "center",
             background: "#262D34",
-            borderRadius: "20px",
+            borderRadius: "6px",
             padding: "10px",
           }}
         >
@@ -32,7 +32,7 @@ function DiscussionBoard() {
           style={{
             textAlign: "center",
             background: "#262D34",
-            borderRadius: "20px",
+            borderRadius: "6px",
             padding: "10px",
           }}
         >
@@ -43,7 +43,7 @@ function DiscussionBoard() {
           style={{
             textAlign: "center",
             background: "#262D34",
-            borderRadius: "20px",
+            borderRadius: "6px",
             padding: "10px",
           }}
         >

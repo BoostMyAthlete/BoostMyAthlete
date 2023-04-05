@@ -10,6 +10,7 @@ function DiscussionBoard() {
           alignItems: "center",
           color: "#ffffff",
           gap: "70px",
+          paddingTop: "70px"
         }}
       >
         <div
@@ -63,7 +64,7 @@ function DiscussionBoard() {
             borderRadius: "50%",
             width: "40px",
             height: "40px",
-            marginTop: "10px"
+            marginTop: "20px"
           }}
         >
           <img

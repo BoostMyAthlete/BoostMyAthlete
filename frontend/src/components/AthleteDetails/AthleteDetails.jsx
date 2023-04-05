@@ -33,7 +33,7 @@ const AthleteDetails = () => {
       {athlete ? (
         <div>
           <div>
-          <img src={athlete.athlete_profile_image} alt={athlete.athlete_last} className="img-thumbnail" style={{ maxWidth: "200px", maxHeight: "200px" }}/>
+          <img src={athlete.athlete_profile_image} alt={athlete.athlete_last} className="img-thumbnail" style={{ maxWidth: "320px", maxHeight: "400px" }}/>
           </div>
           <h4>{athlete.athlete_first}</h4>
           <h4>{athlete.athlete_last}</h4>

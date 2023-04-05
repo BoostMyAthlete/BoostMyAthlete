@@ -3,7 +3,7 @@ import ContactForm from "@components/ContactForm/ContactForm";
 
 function ContactPage() {
   return (
-    <div>
+    <div style={{ paddingBottom: "100px" }}>
       ContactPage
       <ContactForm />
     </div>

@@ -2,7 +2,9 @@
   width: 100%;
   margin:0;
 }
-
+.logo{
+  border-radius: 15px;
+}
 body {
   overflow-x: hidden;
   margin: 0;
@@ -66,7 +68,7 @@ li{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .footer ul {
@@ -94,11 +96,10 @@ li{
 
 .footer-links ul {
   display: flex;
-  align-items: center; 
-  margin: 0; 
-  padding: 0; 
-  flex-direction: row-reverse;
-  margin-right: 30px; 
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
 }
 
 .footer-links ul li {
@@ -131,4 +132,22 @@ li{
   .me-auto {
     justify-content: flex-end;
   }
+}
+
+
+.btn-form {
+  background-color: #372c57;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+ 
+
+}
+
+.input {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 5px;
+ 
 }

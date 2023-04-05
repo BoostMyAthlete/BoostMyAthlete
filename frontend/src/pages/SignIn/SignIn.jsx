@@ -3,7 +3,7 @@ import SignupForm from "../../components/SignupForm/SignupForm";
 
 function SignIn() {
   return (
-    <div>
+    <div style={{ paddingBottom: "100px" }}>
       SignIn
       <SignupForm />
     </div>

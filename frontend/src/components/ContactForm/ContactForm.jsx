@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import {useForm } from 'react-hook-form';
+import '../../App.css'
+
 
 
 function ContactForm() {
@@ -11,26 +13,29 @@ const [data, setData] = useState("");
 
 
       <label htmlFor="name">Username</label> <br />
-      <input {...register("name")} placeholder="Name" />
+      <input className="input" {...register("name")} placeholder="Name" />
       <br />
 
       <label htmlFor="email">E-mail</label> <br />
-      <input {...register("email")} placeholder="E-mail" /> <br />
+      <input className="input"{...register("email")} placeholder="E-mail" /> <br />
 
 
       <label htmlFor="phone">Phone</label> <br />
-      <input {...register("phone")}  type="phone"placeholder="Phone" />
+      <input className="input" {...register("phone")}  type="phone"placeholder="Phone" />
       <br />
 
       <label htmlFor="budget">Budget</label> <br />
-      <input {...register("password")}  type="number"placeholder="Budget" />
+      <input className="input"{...register("budget")}  type="number" step="0.01" placeholder="0.00€" />
       <br />
       
       <label htmlFor="goals">Goals</label> <br />
-      <textarea {...register("Goals")} placeholder="Goals" />
+      <textarea className="input" rows="5" cols="30" {...register("Goals")} placeholder="Goals" />
+
+    
+     
       
       <p>{data}</p>
-      <button type="submit">Send Enquiry</button>
+      <button className="btn-form" type="submit">Send Enquiry</button>
 
      
     </form>

@@ -4,9 +4,9 @@ import CardList from "@components/LandingContent/LandingContent";
 
 function HomePage() {
   return (
+
     <div>
       <CardList />
-    
       <StepByStepCards />
     </div>
   );

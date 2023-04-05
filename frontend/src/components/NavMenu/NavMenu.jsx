@@ -69,21 +69,21 @@ function NavMenu() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="flex-column">
-                <Link to="/" className="nav-link" onClick={handleClick}>
+                <Link to="/" className="nav-link text-reset" onClick={handleClick}>
                   Home
                 </Link>
-                <Link to="/signin" className="nav-link" onClick={handleClick}>
+                <Link to="/signin" className="nav-link text-reset" onClick={handleClick}>
                   Sign In
                 </Link>
-                <Link to="/search" className="nav-link" onClick={handleClick}>
+                <Link to="/search" className="nav-link text-reset" onClick={handleClick}>
                   Athlete
                 </Link>
-                <Link to="/contact" className="nav-link" onClick={handleClick}>
+                <Link to="/contact" className="nav-link text-reset" onClick={handleClick}>
                   Contact Us
                 </Link>
                 <Link
                   to="/community"
-                  className="nav-link"
+                  className="nav-link text-reset"
                   onClick={handleClick}
                 >
                   Community Page

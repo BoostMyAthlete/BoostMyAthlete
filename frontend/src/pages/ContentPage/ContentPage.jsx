@@ -7,6 +7,7 @@ import SignIn from "@pages/SignIn/SignIn";
 import SearchPage from "@pages/SearchPage/SearchPage";
 import ProfilePage from "@pages/ProfilePage/ProfilePage";
 import { Routes, Route } from "react-router-dom";
+import AthleteDetails from "../../components/AthleteDetails/AthleteDetails"
 
 function ContentPage() {
   return (
@@ -14,7 +15,7 @@ function ContentPage() {
       <Route path="/" element={<HomePage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/community" element={<CommunityPage />} />
-      <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/profile/:id" element={<AthleteDetails />} />
       <Route path="/signin" element={<SignIn />} />
       <Route path="/search" element={<SearchPage />} />
     </Routes>

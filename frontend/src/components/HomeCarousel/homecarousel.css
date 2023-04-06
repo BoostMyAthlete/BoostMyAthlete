@@ -1,6 +1,6 @@
 .carousel-container {
-
     display: flex;
+    flex-direction: c;
     justify-content: center;
     align-items: center;
     margin: 10vh;
@@ -9,21 +9,14 @@
     border-radius: 40px;
     animation: carousel-container 1.5s ease-in 0s 1 normal forwards;
     min-height: 900px;
-
-
-
 }
 
 .carousel-image {
-
     max-width: 100%;
     height: 500px;
     object-fit: cover;
     display: block;
     margin: 0 auto;
-
-   
-
 }
 
 .carousel {
@@ -43,23 +36,7 @@
 }
 
 .carousel-item-container {
-    position: relative;
-    text-align: center;
     padding-top: 100px;
-}
-
-.carousel-item-caption {
-    position: absolute;
-    bottom: 2%;
-    left: 40.5%;
-    right: 50%;
-    color: whitesmoke;
-    font-family: "Lastica";
-    background-color: rgba(91, 14, 216, 0.8);
-    font-weight: bolder;
-    padding: 10px;
-    width: 19%;
-    height: 50px;
 }
 
 .carousel-inner, .carousel-control-next, .carousel-control-prev {
@@ -79,4 +56,15 @@
     -webkit-text-stroke-color: rgba(91, 14, 216, 0.8);
     -webkit-text-stroke-width: 2.5px;
     -webkit-text-fill-color: white;
+  }
+  
+
+  @media screen and (max-width:764px) {
+    .carousel-container {
+        margin: 10%;
+    }
+    .carousel-item-caption {
+        top
+        width: 50%;
+    }
   }

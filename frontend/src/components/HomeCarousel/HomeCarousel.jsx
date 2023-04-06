@@ -11,7 +11,7 @@ const HomeCarousel = () => {
   const options = {
     method: 'GET',
     url: 'https://api.triathlon.org/v1/athletes',
-    params: { per_page: '50', validated: 'true' },
+    params: { per_page: '35', validated: 'true' },
     headers: { accept: 'application/json', apikey: '2649776ef9ece4c391003b521cbfce7a' }
   };
 
@@ -33,15 +33,17 @@ const HomeCarousel = () => {
         <Carousel fade indicators={false}>
           {persons.map((athlete) => (
             <Carousel.Item key={athlete.athlete_id} id="carousel">
-              <Link to={`/profile/${athlete.athlete_id}`}>
-              <div className="carousel-item-container">
-                <img
-                  src={athlete.athlete_profile_image}
-                  alt={athlete.athlete_last}
-                  className="carousel-image"
-                />
-                <div className="carousel-item-caption">{athlete.athlete_first} {athlete.athlete_last}</div>
+              <Link to={`/profile/${athlete.athlete_id}`} className="nav-link text-white text-decoration-none">
+                      <div className="carousel-item-container">
+                        <div className="carousel-image-container">
+                        <img
+                          src={athlete.athlete_profile_image}
+                          alt={athlete.athlete_last}
+                          className="carousel-image"
+                          />{athlete.athlete_first} {athlete.athlete_last}
+                </div>
               </div>
+              
               </Link>
             </Carousel.Item>
           ))}

@@ -12,6 +12,13 @@
   transform: translateY(30px);
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+}
+
 @keyframes fadeInUpBig {
   0% {
     opacity: 0;
@@ -132,5 +139,33 @@
     -webkit-text-fill-color: black;
     color: black;
    
+  
+}
+@media screen and (max-width:750px) {
+  .wrapper{
+    margin:10%;
+  }
+  .wrapper .lead {
+    margin-top: 5%;
+  }
+  .display-2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+    /* font-size: 1.1rem !important; */
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .stroke{
+    font-size: 32px;
+    font-family:Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: purple;
+    -webkit-text-fill-color: PURPLE;
+    color: PURPLE;
+  }
+}
+
+@media screen and (max-width:) {
   
 }

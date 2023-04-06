@@ -66,8 +66,8 @@
     transform: translate(5px, -50%) rotate(-30deg);
 }
 
-#fontId h5,
-p {
+#fontId
+{
     font-family: "Lastica";
     font-size: 16px;
     font-weight: bold;

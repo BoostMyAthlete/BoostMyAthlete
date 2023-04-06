@@ -129,4 +129,6 @@ section#entry-page form button:hover {
     section#entry-page{
         margin:10%;
     }
+    section#entry-page form fieldset ul li input {
+        width: 145px;}
 }

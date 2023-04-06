@@ -95,9 +95,15 @@ li{
 }
 
 .footer-logo {
+
   display: flex;
   align-items: center;
   margin-right: auto;
+}
+
+.footer-logo img {
+  
+  border-radius: 15px;
 }
 
 .footer-links {
@@ -131,12 +137,26 @@ li{
   margin-bottom: 0;
 }
 
-.footer-copyright {
-  color: white;
+.footer-copyright p {
+
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-left: 30px;
+  font-family: "Lastica";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  -webkit-text-fill-color: #FF3CAC;
+  text-shadow: none;
+
+}
+
+#highlight {
+
+    text-shadow: 0px 0px 5px #AF1878, 5px 5px 10px #502139;
+    -webkit-text-fill-color: rgb(91, 14, 216);
+  
 }
 
 @media (min-width: 992px) {

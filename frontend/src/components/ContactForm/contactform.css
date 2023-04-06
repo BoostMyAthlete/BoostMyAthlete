@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Jura:400");
+
+.formstyling {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 100vh;
+border-radius: 40px;
+margin: 10vh;
+background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #402954 50%, #2B86C5 100%);
+animation: fadeInUpBig 1s ease forwards;
+box-sizing: border-box;
+opacity: 0;
+transform: translateY(30px);
+
+}
+
+.formstyling fieldset {
+
+    margin: 10px auto;
+    width: 50%;
+    border: 5px;
+    background-color: whitesmoke;
+    border-radius: 11px;
+    opacity: 0.9;
+
+}
+
+.formstyling fieldset ul {
+    margin: 10px auto;
+    padding: 20px;
+    width: 50%;
+    list-style-type: none;
+}
+
+.formstyling fieldset ul li {
+
+    margin: 10px auto;
+}
+
+.formstyling fieldset ul li label {
+    letter-spacing: 10px;
+    font-family: "Lastica";
+    text-align: center;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 2px purple;
+}
+
+.terms {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-terms {
+
+    font-family: "Lastica";
+    font-weight: 900;
+    font-size: 36px;
+    letter-spacing: 10px;
+
+}
+
+#term-1 {
+
+color: purple;
+font-family: "Jura";
+font-size: 24px;
+font-weight: bolder;
+
+}
+
+#paragraph-terms {
+    
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Space Grostek";
+    -webkit-text-fill-color: black;
+    letter-spacing: 0;
+    text-shadow: none;
+    max-width: 60%;
+
+}
+
+.privacy-policy {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-privacy-policy {
+    margin-top: 50px;
+    font-family: "Lastica";
+    font-weight: 900;
+    font-size: 36px;
+    letter-spacing: 10px;
+
+}
+
+.subtitle-privacy-policy {
+
+    color: purple;
+    font-family: "Jura";
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.paragraph-privacy-policy {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Space Grostek";
+    -webkit-text-fill-color: black;
+    letter-spacing: 0;
+    text-shadow: none;
+    max-width: 60%;
+}
+
+
+
+
+@media only screen and (min-width: 420px) {
+
+    form fieldset ul li {
+        grid-template-columns: 100px 1fr;
+    }
+
+    form fieldset ul li label {
+        padding-right: 10px;
+        padding-bottom: 0;
+        text-align: right !important;
+    }
+}

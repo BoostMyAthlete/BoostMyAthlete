@@ -1,6 +1,6 @@
 .carousel-container {
     display: flex;
-    flex-direction: c;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 10vh;
@@ -58,4 +58,14 @@
     -webkit-text-fill-color: white;
   }
   
-
+@media screen and (max-width:764px) {
+   .carousel-container{
+    margin:10%;
+    min-height: 750px;
+   } 
+   .carousel-container h1 {
+    top:1%
+}
+    .carousel-item-container {
+    padding-top: 3%;
+    }}

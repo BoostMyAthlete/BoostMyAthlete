@@ -130,4 +130,55 @@
     margin-right: 0;
   }
   
-  
+  @media screen and (max-width:764px) {
+    .discussion-board-form {
+      margin:1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+      margin-bottom: 5%;
+     
+    }
+    .discussion-board-menu {
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:5px;
+    }
+    .post-box-content{
+      margin:0;
+      display: flex;
+      flex-direction: column;
+    }
+    .post-stats{
+      margin:0;
+      display: flex;
+      flex-direction: column;
+    }
+    .post-stats span{
+      margin:0;
+    }
+    .post-image{
+      margin:0;
+    }
+    .post-text{
+      align-self: center;
+    }
+    .profile-picture{
+      display: none;
+    }
+    .post-input{
+      width: 250px;
+    }
+  }
+  @media screen and (max-width:1023px) {
+    .profile-picture{
+      display: none;
+    }
+    .post-box-content{
+      margin:0;
+    }
+  }

@@ -1,11 +1,10 @@
 import React from "react";
-import SignupForm from "../../components/SignupForm/SignupForm";
+import SignUpForm from "../../components/SignupForm/SignupForm";
 
 function SignIn() {
   return (
-    <div style={{ paddingBottom: "100px" }}>
-      SignIn
-      <SignupForm />
+    <div>
+      <SignUpForm />
     </div>
   );
 }

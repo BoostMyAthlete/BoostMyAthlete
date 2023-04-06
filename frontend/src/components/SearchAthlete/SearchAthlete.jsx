@@ -48,7 +48,7 @@ const SearchAthlete = ({ handleCountry, handleAge }) => {
           <li>
             <label htmlFor="age">Age</label>
             <select class="input" id="age" onChange={handleAge} required>
-              <option value="">-- Select One --</option>
+              <option value="0">-- Select One --</option>
               <option value="18"> &lt;18</option>
               <option value="18,22">18-22</option>
               <option value="23,27">23-27</option>

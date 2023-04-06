@@ -29,12 +29,6 @@
 }
 
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-
 .card {
   border: none;
   transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);

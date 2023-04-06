@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./content.css";
+import { Link } from "react-router-dom";
 
 const Card = ({ imgUrl, title, category }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
+  
+    <div className="container-md justify-content-center">
       <div
         className="card text-white card-has-bg click-col d-flex align-items-center justify-content-center"
         style={{
@@ -39,7 +41,6 @@ const Card = ({ imgUrl, title, category }) => {
 };
 
 const CardList = () => {
-  const link = "/frontend/src/pages/SignIn/SignIn.jsx";
   return (
     <section className="wrapper">
       <div className="container">
@@ -67,18 +68,29 @@ const CardList = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          <Card
-            imgUrl="https://blog.ipleaders.in/wp-content/uploads/2017/05/iPleaders-12.jpg"
-            title="Start your journey here if you're looking into boosting an Athlete"
-            category="Register as a Sponsor"
-            link={link}
-          />
-          <Card
-            imgUrl="https://img.freepik.com/premium-photo/young-black-man-gray-background_1301-1014.jpg"
-            title="Start your journey here if your looking into a Sponsorship"
-            category="Register as an Athlete"
-            link={link}
-          />
+        <div className="col-md-4">
+          <Link to="/signin">
+         
+            <Card
+              imgUrl="https://blog.ipleaders.in/wp-content/uploads/2017/05/iPleaders-12.jpg"
+              title="Start your journey here if you're looking into boosting an Athlete"
+              category="Register as a Sponsor"
+            />
+          
+          </Link>
+          </div>
+          <div className="col-md-4">
+          
+          <Link to="/signin">
+          
+            <Card
+              imgUrl="https://img.freepik.com/premium-photo/young-black-man-gray-background_1301-1014.jpg"
+              title="Start your journey here if your looking into a Sponsorship"
+              category="Register as an Athlete"
+            />
+           
+          </Link>
+          </div>
         </div>
       </div>
     </section>

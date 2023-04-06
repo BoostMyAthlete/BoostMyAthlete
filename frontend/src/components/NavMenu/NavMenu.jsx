@@ -4,7 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
-import bmaBlack from "../../assets/BMA Black.png";
+import bmaBlack from "../../assets/BMA SimplyLogo.png";
+import "./navmenu.css";
 
 function NavMenu() {
   const [show, setShow] = useState(false);
@@ -16,7 +17,7 @@ function NavMenu() {
 
   return (
     <>
-      <Navbar bg="light" expand="lg" className="mb-3 d-none d-lg-block">
+      <Navbar expand="lg" className="mb-3 d-none d-lg-block">
         <Container fluid>
           <Navbar.Brand>
             <img src={bmaBlack} alt="Logo" className="logo" />
@@ -68,21 +69,21 @@ function NavMenu() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="flex-column">
-                <Link to="/" className="nav-link" onClick={handleClick}>
+                <Link to="/" className="nav-link text-reset" onClick={handleClick}>
                   Home
                 </Link>
-                <Link to="/signin" className="nav-link" onClick={handleClick}>
+                <Link to="/signin" className="nav-link text-reset" onClick={handleClick}>
                   Sign In
                 </Link>
-                <Link to="/search" className="nav-link" onClick={handleClick}>
+                <Link to="/search" className="nav-link text-reset" onClick={handleClick}>
                   Athlete
                 </Link>
-                <Link to="/contact" className="nav-link" onClick={handleClick}>
+                <Link to="/contact" className="nav-link text-reset" onClick={handleClick}>
                   Contact Us
                 </Link>
                 <Link
                   to="/community"
-                  className="nav-link"
+                  className="nav-link text-reset"
                   onClick={handleClick}
                 >
                   Community Page

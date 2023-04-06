@@ -59,12 +59,3 @@
   }
   
 
-  @media screen and (max-width:764px) {
-    .carousel-container {
-        margin: 10%;
-    }
-    .carousel-item-caption {
-        top
-        width: 50%;
-    }
-  }

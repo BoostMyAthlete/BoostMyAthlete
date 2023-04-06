@@ -138,3 +138,8 @@ section#entry-page form button:hover {
         text-align: right !important;
     }
 }
+@media screen and (max-width:764px) {
+    section#entry-page{
+        margin:10%;
+    }
+}

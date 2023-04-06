@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const AthleteList = () => {
     const [persons, setPersons] =useState([]);
     const [country, setCountry] = useState('')
-    const [age, setAge] = useState('')
+    const [age, setAge] = useState([0])
 
     const options = {
       method: 'GET',
@@ -47,8 +47,9 @@ const AthleteList = () => {
       return (
         <>
         <SearchAthlete handleCountry={handleCountry}  handleAge={handleAge} />
+        <br/>
             <div>
-                <button onClick={getPersons}>Get Athlete List</button>
+                <button class="btn-form" onClick={getPersons}>Get Athlete List</button>
                 <div className="row">          
       {
       persons

@@ -3,11 +3,11 @@ import React, { useState } from 'react'
 const SearchAthlete = ({handleCountry, handleAge}) => {
   return (  <div>
              <h3>Sports</h3>   
-            <select id="sports">
+            <select class="input" id="sports">
             <option value="triathlon">Triathlon</option>
             </select>
             <h3>Country</h3>
-            <select id="country" onChange={handleCountry}>
+            <select id="country" class="input" onChange={handleCountry}>
             <option value="">-</option>
             <option value="Portugal">Portugal</option>
             <option value="Australia">Australia</option>
@@ -31,7 +31,7 @@ const SearchAthlete = ({handleCountry, handleAge}) => {
             <option value="United States">United States</option>
         </select>
         <h3>Age</h3>
-        <select id="age" onChange={handleAge}>
+        <select id="age" class="input" onChange={handleAge}>
           <option value="0">-</option>
           <option value="18"> &lt;18</option>
           <option value="18,22">18-22</option>

@@ -1,8 +1,15 @@
+.main-content {
+  flex: 1;
+}
+
 .row{
   width: 100%;
   margin:0;
 }
+.logo{
+  border-radius: 15px;
 
+}
 body {
   overflow-x: hidden;
   margin: 0;
@@ -13,6 +20,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.carousel {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -21,7 +33,11 @@ code {
 
 .App {
   text-align: center;
-}
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  }
+
 
 .App-logo {
   height: 40vmin;
@@ -58,10 +74,7 @@ li{
 
 
 .footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  height: 100px;
   background-color: #1a202c;
   display: flex;
   justify-content: space-between;
@@ -130,4 +143,31 @@ li{
   .me-auto {
     justify-content: flex-end;
   }
+}
+
+
+.btn-form {
+  background-color: #372c57;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+ 
+
+}
+
+.input {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 5px;
+ 
+}
+@media screen and (max-width:760px) {
+  .footer{
+    flex-direction: row;
+    height: 10%;
+  }
+  .footer-links{
+    display: none;
+  }  
 }

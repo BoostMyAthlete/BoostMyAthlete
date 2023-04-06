@@ -1,24 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Jura:400");
 
-* {
-    font-family: Jura, Arial;
-    font-weight: 400;
-}
 
 body {
     margin: 0;
     padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
 
 section#entry-page {
     margin: 10vh;
@@ -77,7 +64,7 @@ section#entry-page form fieldset ul {
 }
 
 section#entry-page form fieldset ul li {
-    display: grid;
+    display: block;
     align-items: center;
     margin: 10px;
 }

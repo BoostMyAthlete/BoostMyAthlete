@@ -7,9 +7,9 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        <img style={{ width: 50, height: 50 }} src={bmaWhite} alt="Logo" />
+        <img className="footer-logo-border" style={{ width: 50, height: 50 }} src={bmaWhite} alt="Logo" />
         <div className="footer-copyright">
-          <p>&copy; 2023 BoostMyAthlete</p>
+          <p>&copy; 2023 BoostMy<span id="highlight">Athlete</span></p>
         </div>
       </div>
       <div className="footer-links">

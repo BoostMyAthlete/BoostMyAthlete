@@ -1,0 +1,134 @@
+.discussion-board-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    gap: 70px;
+    padding-top: 70px;
+  }
+  
+  .menu-item {
+    text-align: center;
+    background: #262d34;
+    border-radius: 6px;
+    padding: 10px;
+  }
+  
+  .discussion-board-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  
+  .profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262d34;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+  
+  .profile-picture img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .form-inputs {
+    margin-top: 20px;
+  }
+  
+  .post-input {
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    color: #ffffff;
+    background-color: #262d34;
+  }
+  
+  .post-button {
+    background: #ff6934;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 10px 7px;
+  }
+  
+  .post-box {
+    display: flex;
+    align-items: center;
+    background-color: #262d34;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 80px;
+    padding-left: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+.post-box-content {
+  display: flex;
+  align-items: center;
+  background-color: #262d34;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.post-image {
+  margin-right: 50px;
+}
+
+.post-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.post-box .profile-picture {
+    margin-right: 10px;
+    margin-left: auto;
+    align-self: flex-start;
+  }
+  
+  .post-box .profile-picture img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .post-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 100px;
+    margin-left: 300px;
+    text-align: right;
+  }
+  
+  .post-stats span {
+    margin-right: 70px;
+  }
+  
+  .post-stats span:last-child {
+    margin-right: 0;
+  }
+  
+  

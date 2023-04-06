@@ -5,7 +5,6 @@ import ContactPage from "@pages/ContactPage/ContactPage";
 import HomePage from "@pages/HomePage/HomePage";
 import SignIn from "@pages/SignIn/SignIn";
 import SearchPage from "@pages/SearchPage/SearchPage";
-import ProfilePage from "@pages/ProfilePage/ProfilePage";
 import { Routes, Route } from "react-router-dom";
 import AthleteDetails from "../../components/AthleteDetails/AthleteDetails"
 

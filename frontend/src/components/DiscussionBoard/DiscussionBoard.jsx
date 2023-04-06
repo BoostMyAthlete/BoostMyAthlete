@@ -1,108 +1,110 @@
 import React from "react";
-import newest from "../../assets/newest.png"
-import following from "../../assets/following.png"
-import popular from "../../assets/popular.png"
-import perfil from "../../assets/perfil.png"
+import newest from "../../assets/newest.png";
+import following from "../../assets/following.png";
+import popular from "../../assets/popular.png";
+import perfil from "../../assets/perfil.png";
+import surf from "../../assets/surf.png";
+import tableTennis from "@assets/tableTennis.png";
+import MMA from "@assets/MMA.png"
+import user1 from "@assets/user1.png";
+import user2 from "@assets/user2.png";
+import user3 from "@assets/user3.png";
+import "./DiscussionBoard.css";
 
 function DiscussionBoard() {
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "#ffffff",
-          gap: "70px",
-          paddingTop: "70px"
-        }}
-      >
-        <div
-          style={{
-            textAlign: "center",
-            background: "#262D34",
-            borderRadius: "6px",
-            padding: "10px",
-          }}
-        >
-          <img src= {newest} alt="newest" width="30" />
-          <span style={{ marginLeft: "10px" }}>Newest</span>
+      <div className="discussion-board-menu">
+        <div className="menu-item">
+          <img src={newest} alt="newest" width="30" />
+          <span>Newest</span>
         </div>
-        <div
-          style={{
-            textAlign: "center",
-            background: "#262D34",
-            borderRadius: "6px",
-            padding: "10px",
-          }}
-        >
+        <div className="menu-item">
           <img src={popular} alt="popular" width="30" />
-          <span style={{ marginLeft: "10px" }}>Popular</span>
+          <span>Popular</span>
         </div>
-        <div
-          style={{
-            textAlign: "center",
-            background: "#262D34",
-            borderRadius: "6px",
-            padding: "10px",
-          }}
-        >
+        <div className="menu-item">
           <img src={following} alt="following" width="30" />
-          <span style={{ marginLeft: "10px" }}>Following</span>
+          <span>Following</span>
         </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "flex-start",
-          marginTop: "50px",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            backgroundColor: "#262D34",
-            borderRadius: "50%",
-            width: "60px",
-            height: "60px",
-            margin: "10px",
-          }}
-        >
-          <img
-            src={perfil}
-            alt="perfil"
-            style={{ borderRadius: "50%", width: "100%", height: "100%" }}
-          />
+      <div className="discussion-board-form">
+        <div className="profile-picture">
+          <img src={perfil} alt="perfil" />
         </div>
-        <div style={{ marginTop: "20px" }}>
+        <div className="form-inputs">
           <input
             type="text"
             placeholder="Let's share your interest ..."
-            style={{
-              border: "none",
-              borderRadius: "6px",
-              padding: "10px",
-              marginLeft: "20px",
-              marginRight: "20px",
-              width: "300px",
-              color: "#ffffff",
-              backgroundColor:"#262D34",
-            }}
+            className="post-input"
           />
-          <button
-            style={{
-              background: "#FF6934",
-              border: "none",
-              borderRadius: "6px",
-              color: "#ffffff",
-              padding: "10px 7px",
-            }}
-          >
-            Create post
-          </button>
+          <button className="post-button">Create post</button>
+        </div>
+      </div>
+      <div className="post-box">
+        <div className="post-box-content">
+          <div className="post-image">
+            <img src={surf} alt="surf" />
+          </div>
+          <div className="post-text">Surf WSL News</div>
+          <div className="post-stats">
+            <span>
+              651,324 <span>Views</span>
+            </span>
+            <span>
+              36,6545 <span>Likes</span>
+            </span>
+            <span>
+              56 <span>Comments</span>
+            </span>
+          </div>
+          <div className="profile-picture">
+            <img src={user1} alt="user1" />
+          </div>
+        </div>
+      </div>
+      <div className="post-box">
+        <div className="post-box-content">
+          <div className="post-image">
+            <img src={tableTennis} alt="tableTennis" />
+          </div>
+          <div className="post-text">Table Tennis News</div>
+          <div className="post-stats">
+            <span>
+              244,564 <span>Views</span>
+            </span>
+            <span>
+              10,920 <span>Likes</span>
+            </span>
+            <span>
+              184 <span>Comments</span>
+            </span>
+          </div>
+          <div className="profile-picture">
+            <img src={user2} alt="user2" />
+          </div>
+        </div>
+      </div>
+      <div className="post-box">
+        <div className="post-box-content">
+          <div className="post-image">
+            <img src={MMA} alt="MMA" />
+          </div>
+          <div className="post-text">MMA News</div>
+          <div className="post-stats">
+            <span>
+              964,258 <span>Views</span>
+            </span>
+            <span>
+              64,755 <span>Likes</span>
+            </span>
+            <span>
+              44 <span>Comments</span>
+            </span>
+          </div>
+          <div className="profile-picture">
+            <img src={user3} alt="user3" />
+          </div>
         </div>
       </div>
     </div>

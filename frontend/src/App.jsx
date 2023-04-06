@@ -1,12 +1,20 @@
-import Home from "./pages/Home";
-
 import "./App.css";
+import ContentPage from "@pages/ContentPage/ContentPage";
+import NavMenu from "@components/NavMenu/NavMenu";
+import Footer from "@components/Footer/Footer";
+
+
+
 
 function App() {
-  return (
+  return ( 
     <div className="App">
-      <Home />
-      <p>coucou</p>
+      <div className="main-content">
+      <NavMenu />
+      <ContentPage />
+      </div>
+      <Footer />
+
     </div>
   );
 }

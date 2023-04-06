@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Jura:400");
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr minmax(200px, 400px) 1fr;
+    grid-template-rows: 1fr minmax(auto, 1fr) 1fr;
+    grid-gap: 10px;
+}
+
+.form fieldset {
+
+    display: flex;
+    text-align: center;
+    margin: 0;
+    border: none;
+}
+
+.title {
+
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: "Lastica";
+    font-size: 44px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: rgb(166, 43, 255) 2px 0px 0px, rgb(166, 43, 255) 1.75517px 0.958851px 0px, rgb(166, 43, 255) 1.0806px 1.68294px 0px, rgb(166, 43, 255) 0.141474px 1.99499px 0px, rgb(166, 43, 255) -0.832294px 1.81859px 0px, rgb(166, 43, 255) -1.60229px 1.19694px 0px, rgb(166, 43, 255) -1.97998px 0.28224px 0px, rgb(166, 43, 255) -1.87291px -0.701566px 0px, rgb(166, 43, 255) -1.30729px -1.5136px 0px, rgb(166, 43, 255) -0.421592px -1.95506px 0px, rgb(166, 43, 255) 0.567324px -1.91785px 0px, rgb(166, 43, 255) 1.41734px -1.41108px 0px, rgb(166, 43, 255) 1.92034px -0.558831px 0px;
+
+}
+
+.form fieldset ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.form fieldset ul li {
+
+    margin: 10px;
+}
+
+.form fieldset ul li label {
+    letter-spacing: 5px;
+    font-family: "Lastica";
+    text-align: center;
+    padding-bottom: 2px;
+    color: white;
+    text-shadow: rgb(166, 43, 255) 2px 0px 0px, rgb(166, 43, 255) 1.75517px 0.958851px 0px, rgb(166, 43, 255) 1.0806px 1.68294px 0px, rgb(166, 43, 255) 0.141474px 1.99499px 0px, rgb(166, 43, 255) -0.832294px 1.81859px 0px, rgb(166, 43, 255) -1.60229px 1.19694px 0px, rgb(166, 43, 255) -1.97998px 0.28224px 0px, rgb(166, 43, 255) -1.87291px -0.701566px 0px, rgb(166, 43, 255) -1.30729px -1.5136px 0px, rgb(166, 43, 255) -0.421592px -1.95506px 0px, rgb(166, 43, 255) 0.567324px -1.91785px 0px, rgb(166, 43, 255) 1.41734px -1.41108px 0px, rgb(166, 43, 255) 1.92034px -0.558831px 0px;
+}
+
+.input {
+
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 420px) {
+    form h2 {
+        font-size: 40px;
+    }
+
+    form fieldset ul li {
+        grid-template-columns: 100px 1fr;
+    }
+
+    form fieldset ul li label {
+        padding-right: 10px;
+        padding-bottom: 0;
+        text-align: right !important;
+    }
+}
+@media screen and (max-width: 764px) {
+    form h2 {
+        font-size: 40px;
+    }
+
+    form fieldset ul li {
+        grid-template-columns: 100px 1fr;
+    }
+
+    form fieldset ul li label {
+        padding-right: 10px;
+        padding-bottom: 0;
+        text-align: right !important;
+    }
+}

@@ -1,0 +1,35 @@
+
+.row {
+    gap: 0px;
+}
+
+#testimonials {
+
+    font-family: "Lastica";
+    font-weight: 900;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+#user-testimonials {
+    font-size: 24px;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10%);
+    background-color: whitesmoke;
+   
+}
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  .testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }

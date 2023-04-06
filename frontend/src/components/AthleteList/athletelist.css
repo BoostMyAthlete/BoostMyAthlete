@@ -1,0 +1,82 @@
+.searchathletebutton {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh;
+    height: 100vh;
+    border-radius: 40px;
+    box-sizing: border-box;
+    animation: fadeInUpBig 1s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+    background: url(https://e0.pxfuel.com/wallpapers/255/194/desktop-wallpaper-athletics-for-athlete.jpg) center center/cover no-repeat;
+}
+
+.btn-form {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: "Lastica";
+    font-weight: bold;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #333333;
+    position: relative;
+    transition: 0.3s;
+    background: linear-gradient(225deg, #FF3CAC 0%, #402954 50%, #2B86C5 100%);
+}
+
+.btn-form::before,
+.btn-form::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform-origin: 100% 50%;
+    height: 1.5px;
+    width: 11px;
+    background: #333;
+    border-radius: 4px;
+    will-change: transform;
+    transition: .3s;
+}
+
+.btn-form::before {
+    transform: translateY(-50%) rotate(30deg);
+}
+
+.btn-form::after {
+    transform: translateY(-50%) rotate(-30deg);
+}
+
+.btn-form:hover::before {
+    transform: translate(5px, -50%) rotate(30deg);
+}
+
+.btn-form:hover::after {
+    transform: translate(5px, -50%) rotate(-30deg);
+}
+
+#fontId h5,
+p {
+    font-family: "Lastica";
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    -webkit-text-fill-color: #FF3CAC;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}

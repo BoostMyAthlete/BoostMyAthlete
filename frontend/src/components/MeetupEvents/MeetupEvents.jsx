@@ -1,6 +1,4 @@
 import React from "react";
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './MeetupEvents.css';
 
 const MeetupEvents = () => {
